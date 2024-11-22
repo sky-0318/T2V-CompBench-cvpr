@@ -2,7 +2,6 @@
 
 ### Table of Contents
 - [Overview](#overview)
-- [Evaluation Results](#evaluation_results)
 - [Prompt Suite](#prompt_suite)
 - [MLLM-based Evaluation](#mllm_eval)
   - [Consistent Attribute Binding](#consistent_attribute_binding)
@@ -14,9 +13,7 @@
   - [Generative Numeracy](#generative_numeracy)
 - [Tracking-based Evaluation](#tracking_eval)
   - [Motion Binding](#motion_binding)
-- [Sampled Videos](#sampled_videos)
 - [Evaluate Your Own Videos](#eval_your_own)
-- [Citation](#citation)
 
   
 <a name="overview"></a>
