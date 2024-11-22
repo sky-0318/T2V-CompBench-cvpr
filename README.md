@@ -45,7 +45,7 @@ Generate videos of your model using the T2V-CompBench prompts provided in the `p
 ├── 0003.mp4
 ├── 0004.mp4
 ...
-└── 0100.mp4
+└── 0200.mp4
 ```
 
 Note: The numerical names of the video files are just to indicate the reading order that matches the order of prompts. You can use other naming conventions that maintain the order (*e.g.* "0.mp4", "1.mpg", *etc.*)
@@ -150,7 +150,7 @@ Generate videos of your model using the T2V-CompBench prompts provided in the `p
 ├── 0003.mp4
 ├── 0004.mp4
 ...
-└── 0100.mp4
+└── 0200.mp4
 ```
 
 Note: Please put all the videos of spatial relationships (both 2D and 3D) together. The numerical names of the video files are just to indicate the reading order that matches the order of prompts. You can use other naming conventions that maintain the order (*e.g.* "0.mp4", "1.mpg", *etc.*)
@@ -255,7 +255,7 @@ Generate videos of your model using the T2V-CompBench prompts provided in the `p
 ├── 0003.mp4
 ├── 0004.mp4
 ...
-└── 0100.mp4
+└── 0200.mp4
 ```
 
 Note: The numerical names of the video files are just to indicate the reading order that matches the order of prompts. You can use other naming conventions that maintain the order (*e.g.* "0.mp4", "1.mpg", *etc.*)
