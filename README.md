@@ -1,15 +1,6 @@
 # T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation
 
-<a href='https://t2v-compbench.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-<a href='https://arxiv.org/abs/2407.14505'><img src='https://img.shields.io/badge/T2V--CompBench-Arxiv-red'></a> 
-
-This repository is the official implementation of the following paper:
-> **T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation**<br>
-> [Kaiyue Sun](https://scholar.google.com/citations?user=mieuBzUAAAAJ&hl=en)<sup>1</sup>, [Kaiyi Huang](https://github.com/Karine-Huang)<sup>1</sup>, [Xian Liu](https://alvinliu0.github.io/)<sup>2</sup>, [Yue Wu](https://yuewuhkust.github.io/)<sup>3</sup>, Zihan Xu<sup>1</sup>, [Zhenguo Li](https://scholar.google.com/citations?hl=en&user=XboZC1AAAAAJ&view_op=list_works&sortby=pubdate)<sup>3</sup>, [Xihui Liu](https://xh-liu.github.io/)<sup>1</sup><br>
-> ***<sup>1</sup>The University of Hong Kong, <sup>2</sup>The Chinese University of Hong Kong, <sup>3</sup>Huawei Noah’s Ark Lab***
-
 ### Table of Contents
-- [Updates](#updates)
 - [Overview](#overview)
 - [Evaluation Results](#evaluation_results)
 - [Prompt Suite](#prompt_suite)
@@ -27,27 +18,16 @@ This repository is the official implementation of the following paper:
 - [Evaluate Your Own Videos](#eval_your_own)
 - [Citation](#citation)
 
-<a name="updates"></a>
-## 🚩 Updates
-- :black_square_button: [TODO] T2V-CompBench Leaderboard
-- ✅ [08/2024] Release the generated videos for T2V-CompBench evaluation.
-- ✅ [07/2024] Release the evaluation code for 7 categories in compositional Text-to-Video (T2V) generation.
-- ✅ [07/2024] Release the prompt dataset and metadata.
   
 <a name="overview"></a>
 ## :mega: Overview
 ![teaser](./asset/teaser.png)
-We propose **T2V-CompBench**, the first benchmark tailored for **compositional text-to-video generation**. T2V-CompBench encompasses diverse aspects of compositionality, including **consistent attribute binding**, **dynamic attribute binding**, **spatial relationships**, **motion binding**, **action binding**, **object interactions**, and **generative numeracy**. We further carefully design evaluation metrics of **MLLM-based metrics**, **detection-based metrics**, and **tracking-based metrics**, which can better reflect the compositional text-to-video generation quality of seven proposed categories with 700 text prompts. The effectiveness of the proposed metrics is verified by correlation with human evaluations. We also **benchmark various text-to-video generative models** and conduct in-depth analysis across different models and different compositional categories. We find that compositional text-to-video generation is highly challenging for current models, and we hope that our attempt will shed light on future research in this direction.
+We propose **T2V-CompBench**, the first benchmark tailored for **compositional text-to-video generation**. T2V-CompBench encompasses diverse aspects of compositionality, including **consistent attribute binding**, **dynamic attribute binding**, **spatial relationships**, **motion binding**, **action binding**, **object interactions**, and **generative numeracy**. We further carefully design evaluation metrics of **MLLM-based metrics**, **detection-based metrics**, and **tracking-based metrics**, which can better reflect the compositional text-to-video generation quality of seven proposed categories with 1400 text prompts. The effectiveness of the proposed metrics is verified by correlation with human evaluations. We also **benchmark various text-to-video generative models** and conduct in-depth analysis across different models and different compositional categories. We find that compositional text-to-video generation is highly challenging for current models, and we hope that our attempt will shed light on future research in this direction.
 
-<a name="evaluation_results"></a>
-## :mortar_board: Evaluation Results
-![ranking](./asset/ranking.png)
-
-We benchmark 13 publicly available text-to-video generation models and 7 commercial models including Kling, Gen-3, Gen-2, Pika, Luma Dream Machine, Dreamina and PixVerse. We normalize the results per categories for clearer comparisons. 
 
 <a name="prompt_suite"></a>
 ## :blue_book: T2V-CompBench Prompt Suite
-The T2V-CompBench prompt suite includes 700 prompts covering 7 categories, each with 100 prompts. 
+The T2V-CompBench prompt suite includes 1400 prompts covering 7 categories, each with 200 prompts. 
 
 Text prompts of each category are saved in a text file in the ```prompts/``` directory.
 
@@ -366,25 +346,9 @@ The score for each video will be saved in `../csv_motion_binding/mymodel_score.c
 
 The final score of the model in this category (motion) will be saved in the last line of `../csv_motion_binding/mymodel_score.csv`.
 
-<a name="sampled_videos"></a>
-## :film_strip: Sampled Videos
-To facilitate future research and ensure complete transparency, we release all the videos we sampled and used for the T2V-CompBench evaluation.
-You can download them on [OneDrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/kaiyue_connect_hku_hk/EjXmmz0XXQBFu_EMmBM2WCkBI9iuATOib-dC3GLBUmCuIw?e=a6lFCC).
-
 
 <a name="eval_your_own"></a>
 ## :surfer: Evaluate Your Own Videos
 
 To evaluate your own videos, prepare the evaluation videos and prompt or metadata files similar to the provided examples. Follow the same steps to run the evaluation codes.
 
-<a name="citation"></a>
-## :black_nib: Citation
-If you find T2V-CompBench useful for your research, please cite our paper. :)
-```
-@article{sun2024t2v,
-  title={T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation},
-  author={Sun, Kaiyue and Huang, Kaiyi and Liu, Xian and Wu, Yue and Xu, Zihan and Li, Zhenguo and Liu, Xihui},
-  journal={arXiv preprint arXiv:2407.14505},
-  year={2024}
-}
-```
